@@ -1,0 +1,37 @@
+Bus 001 Device 003: ID 12d1:1404 Huawei Technologies Co., Ltd.
+
+AR5B95
+
+
+root@OpenWrt:/# ls /dev/ttyUSB* -l                                              
+crw-r--r--    1 root     root      188,   0 May 26 10:43 /dev/ttyUSB0           
+crw-r--r--    1 root     root      188,   1 May 26 10:41 /dev/ttyUSB1           
+crw-r--r--    1 root     root      188,   2 May 26 10:41 /dev/ttyUSB2           
+crw-r--r--    1 root     root      188,   3 May 26 10:41 /dev/ttyUSB3           
+crw-r--r--    1 root     root      188,   4 May 26 10:41 /dev/ttyUSB4           
+crw-r--r--    1 root     root      188,   5 May 26 10:41 /dev/ttyUSB5 
+
+
+
+
+[  304.620000] mmc0: new high speed SDHC card at address 0007                   
+[  304.630000] mmcblk0: mmc0:0007 SD8GB 7.42 GiB                                
+[  306.230000] msdc-1 -> msdc pio find abort <- msdc_pio_abort() : L<1189> PID<>
+[  306.250000] msdc-1 -> read pio data->error<-145> left<4096> size<0> <- msdc_>
+[  306.270000] mmcblk0: error -145 transferring data, sector 0, nr 8, cmd respo0
+[  306.290000] mmcblk0: retrying using single block read                        
+[  307.890000] msdc-1 -> msdc pio find abort <- msdc_pio_abort() : L<1189> PID<>
+[  307.910000] msdc-1 -> read pio data->error<-145> left<512> size<0> <- msdc_p>
+[  307.930000] mmcblk0: error -145 transferring data, sector 0, nr 8, cmd respo0
+[  307.950000] blk_update_request: I/O error, dev mmcblk0, sector 0  
+
+
+
+[  342.870000] mmc0: new high speed SDXC card at address 0007                   
+[  342.890000] mmcblk0: mmc0:0007 SD64G 58.2 GiB                                
+[  342.900000]  mmcblk0: p1    
+
+
+[  342.870000] mmc0: new high speed SDXC card at address 0007                   
+[  342.890000] mmcblk0: mmc0:0007 SD64G 58.2 GiB                                
+[  342.900000]  mmcblk0: p1    
